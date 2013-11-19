@@ -16,7 +16,7 @@ check_process() {
                 read ANSWER
                 # Putting a regex in a variable is a workaround for compatibility with old bash versions (3.1 and previous)
                 REGEX="^[nNyY]$"
-                while ! [ $ANSWER =~ $REGEX ]
+                while ! [[ $ANSWER =~ $REGEX ]]
                 do
                         echo "Reply with 'y' or 'n' please. Do you want to kill this process? [y/n] "
                         read ANSWER
