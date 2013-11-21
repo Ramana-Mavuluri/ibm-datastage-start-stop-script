@@ -139,8 +139,7 @@ case $COMMAND in
 	$0 -start
 	;;
 *)
-	echo "Usage: $0 [-dshome path_to_dshome] -start|-stop|-restart"
-	exit -1
+	usage
 	;;
 esac
 exit 0
